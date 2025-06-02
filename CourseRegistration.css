@@ -1,0 +1,184 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans", sans-serif;
+}
+h1:hover{
+  background: #c90414;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 4, 20, 1) 0%,
+    rgba(253, 137, 29, 1) 51%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+body {
+  background-color: black;
+  color: chartreuse;
+}
+
+form {
+  width: 500px;
+}
+
+legend {
+  background: #c90414;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 4, 20, 1) 0%,
+    rgba(253, 137, 29, 1) 51%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+fieldset {
+  border: 3px solid chartreuse;
+  border-radius: 30px;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input:optional {
+  border: 1px dashed chartreuse;
+}
+
+input:read-only {
+  background-color: black;
+  color: chartreuse;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  height: 17px;
+  width: 17px;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  color: blue;
+  font-size: 20px;
+}
+
+input[type="date"] {
+  cursor: pointer;
+  color: chartreuse;
+  background-color: black;
+}
+
+select {
+  color: chartreuse;
+  background-color: black;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  background-color: black;
+  color: red;
+}
+
+input[type="submit"] {
+  border: 1px solid white;
+  background-color: black;
+  color: chartreuse;
+  font-size: 17px;
+  border-radius: 30px;
+}
+input[type="submit"]:hover{
+  background-color: lightgreen;
+  color: darkgreen;
+  font-weight: bolder;
+}
+input[type="reset"] {
+  border: 1px solid white;
+  background-color: black;
+  color: chartreuse;
+  font-size: 17px;
+  border-radius: 30px;
+}
+
+input[type="reset"]:hover{
+    color: darkred;
+    background-color: pink;
+    font-weight: bolder;
+}
+
+input{
+  background-color: black;
+  color: white;
+}
+input:focus{
+  background-color: gray;
+  color: white;
+}
+
+input::placeholder{
+  color: chartreuse;
+}
+
+textarea{
+  background-color: black;
+}
+
+textarea::placeholder{
+  color: chartreuse;  
+}
+
+textarea:focus{
+  background-color: gray;
+  color: white  ;
+}
+
+input[id="name"]+p{
+  display: none;
+}
+
+input[id="name"]:focus+p{
+  display: inline;
+  font-size: 13px;
+}
+
+input[id="sur_name"]+p{
+  display: none;
+}
+
+input[id="sur_name"]:focus+p{
+  display: inline;
+  font-size: 13px;
+}
+
+input[type="tel"]+p{
+  display: none;
+}
+
+input[type="tel"]:focus+p{
+  display: inline;
+  font-size: 13px;
+}
+
+img{
+  display: none;
+}
+input[type="email"]:focus:valid~img#valid{
+  display: inline;
+  height: 18px;
+  width: 18px;
+}
+
+input[type="email"]:focus:invalid~img#invalid{
+  display: inline;
+  height: 18px;
+  width: 18px;
+}
